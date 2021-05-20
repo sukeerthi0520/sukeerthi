@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURPRISE</title>
+
+    <link rel="stylesheet" href="ss.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>HERE'S THE SURPRISE</h1>
+        <div class="row">
+           <div class="col">
+             <div class="feature-img">
+               <img src="media/pic1.png" width="100%">
+               <img src="media/play.png" class="play-btn"
+               onclick="playVideo('media/vid1.mp4')">
+             </div>
+             <P>Jaya Sree</P>
+           </div>
+           <div class="small-img-row">
+            <div class="small-img">
+              <img src="media/pic3.png">
+              <img src="media/play.png" class="play-btn"
+              onclick="playVideo('media/VID-20210519-WA0018.mp4')">
+            </div>
+            <p>Hemalatha</p> 
+          </div>
+          
+          <div class="col">
+            <div class="small-img-row">
+              <div class="small-img">
+                 <img src="media/pic2.png">
+                 <img src="media/play.png" class="play-btn"
+                 onclick="playVideo('media/vid2.mp4')">
+              </div>
+              <p>Kalyan Srinivas</p>
+            </div>
+            <div class="small-img-row">
+             <div class="small-img">
+               <img src="media/pic4.png">
+               <img src="media/play.png" class="play-btn"
+               onclick="playVideo('media/vid4.mp4')">
+             </div>
+             <p>Sushma Sree</p> 
+           </div>
+           <div class="small-img-row">
+             <div class="small-img">
+               <img src="media/pic5.png">
+               <img src="media/play.png" class="play-btn"
+               onclick="playVideo('media/vid5.mp4')">
+             </div>
+             <p>Sowmya Kranti</p> 
+           </div>
+           <div class="small-img-row">
+             <div class="small-img">
+               <img src="media/pic6.png">
+               <img src="media/play.png" class="play-btn"
+               onclick="playVideo('media/vid6.mp4')">
+             </div>
+             <p>Ramani Dulipala</p> 
+           </div>
+          </div>
+        </div>
+     </div>
+         
+     <div class="video-player" id="videoPlayer">
+       <video width="100%" controls autoplay id="myVideo">
+         <source src="media/vid1.mp4" type="video/mp4">
+       </video>
+       <img src="media/close.png" class="close-btn" 
+       onclick="stopVideo()">
+     </div>
+  
+     <script>
+        var videoPlayer = document.getElementById("videoplayer");
+        var myVideo = document.getElementById("myVideo");
+  
+        function stopVideo(){
+  
+          videoPlayer.style.display = "none";
+  
+        }
+  
+        function playVideo(file){
+              myVideo.src = file;
+              videoPlayer.style.display = "block";
+  
+        }
+    
+    </script>
+   
+    
+</body>
+</html>
